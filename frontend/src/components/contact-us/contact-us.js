@@ -25,13 +25,16 @@ import {
   MdOutlineEmail,
 } from 'react-icons/md';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+import NavScrollExample from '../navbar/Navbar';
 
 export default function contact() {
   return (
-    <Container bg="#f2f4f3" maxW="full" mt={0} centerContent overflow="hidden" >
+    <>
+    <NavScrollExample />
+    <Container bg="#caf0f8" maxW="full" mt={0} centerContent overflow="hidden" >
       <Flex>
         <Box
-          bg="#a9927d"
+          bg="#14213d"
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
@@ -41,7 +44,7 @@ export default function contact() {
               <WrapItem>
                 <Box boxShadow='2xl' >
                   <Heading>Contact</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="black">
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="white">
                     Fill up the form below to contact
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
@@ -162,5 +165,6 @@ export default function contact() {
         </Box>
       </Flex>
     </Container>
+    </>
   );
 }
