@@ -38,7 +38,7 @@ h3{
 }
 
 .img-btn{
-    background-color: #333;
+    background-color: #000000;
     text-transform: uppercase;
     color: #fff;
     padding: 1rem;
@@ -49,5 +49,5 @@ h3{
 .img-btn:hover{
     background-color: #fff;
     transition: 1s ease-in-out;
-    color: #333;
+    color: #000000;
 }

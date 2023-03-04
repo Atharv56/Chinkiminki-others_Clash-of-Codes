@@ -31,10 +31,10 @@ const BlogContainer = () => {
                 <img src = {image_url} alt = 'title' style={{height:180, width: 180}}/>
               </div>
               <div className='col-9 p-3'>
-                <h2>{title}</h2>
-                <p>{createdAt.toDate().toDateString()}</p>
-                <h6>{description}</h6>
-                <Delete  id={id} image_url = {image_url}/>
+                <h2 style={{padding:5,color:"blue",fontWeight: "bold"}}>{title}</h2>
+                <p style={{padding:5}}>{createdAt.toDate().toDateString()}</p>
+                <h6 style={{padding:5,fontSize:15}}>{description}</h6>
+                <Delete  style={{padding:5}} id={id} image_url = {image_url}/>
                 </div>
 
             </div>

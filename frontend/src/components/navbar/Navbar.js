@@ -9,7 +9,7 @@ import styles from './Navbar.module.css';
 
 function NavScrollExample() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky = "top">
+    <Navbar bg="black" variant="dark" expand="lg" sticky = "top">
       <Container fluid>
         <Navbar.Brand href="/home">SAKHI</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

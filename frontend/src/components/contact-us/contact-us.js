@@ -28,10 +28,10 @@ import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 
 export default function contact() {
   return (
-    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden" >
+    <Container bg="#f2f4f3" maxW="full" mt={0} centerContent overflow="hidden" >
       <Flex>
         <Box
-          bg="#02054B"
+          bg="#a9927d"
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
@@ -41,7 +41,7 @@ export default function contact() {
               <WrapItem>
                 <Box boxShadow='2xl' >
                   <Heading>Contact</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="black">
                     Fill up the form below to contact
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>

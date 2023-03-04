@@ -59,7 +59,7 @@ export default function AddArticle() {
 
 
   return (
-        <div className="border p-3 mt-3 bg-light" style={{position: "fixed"}}>
+        <div className="border p-3 mt-3 bg-light" style={{position: "fixed",}}>
             <h2>Create Article</h2>
             <label htmlFor="">Title</label>
             <input type="text" name= "title" className= "form-control" value={formData.title} onChange={(e) => handleChange(e)}>
