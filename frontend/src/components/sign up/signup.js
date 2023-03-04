@@ -11,8 +11,34 @@ import {
     Image,
   } from '@chakra-ui/react';
   import Login from './img2.jpg'
+  import React, { useRef, useState } from 'react';
+  import { useNavigate } from 'react-router-dom'
+  import {auth} from '../firebase'
+  import {createUserWithEmailAndPassword, updateProfile} from 'firebase/auth'
+
   
   export default function SplitScreen() {
+    const navigate = useNavigate()
+    const emailRef = useRef()
+    const passwordRef = useRef()
+    const nameRef = useRef()
+    const [errorMsg, setErrorMsg]= useState('')
+    const handleSubmission = () => {
+      console.log(emailRef.current.value)
+
+      createUserWithEmailAndPassword(auth, emailRef.current.value, passwordRef.current.value).then(async(res)=>{
+          const user = res.user
+          await updateProfile(user, {
+              displayName: nameRef.current.value,
+          });
+          console.log(user)
+          navigate('/home')
+      }).catch((err)=> {
+          setErrorMsg(err.message)
+          console.log("Error - ", err.message)
+  
+  })
+  }
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -20,15 +46,15 @@ import {
             <Heading fontSize={'2xl'}>Create an account</Heading>
             <FormControl id="email">
               <FormLabel>Name</FormLabel>
-              <Input type="email" />
+              <Input type="text" ref={nameRef}/>
             </FormControl>
-            <FormControl id="email">
+            <FormControl id="email" >
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input type="email"  ref={emailRef}/>
             </FormControl>
-            <FormControl id="password">
+            <FormControl id="password" >
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <Input type="password" ref={passwordRef}/>
             </FormControl>
             <Stack spacing={6}>
               <Stack
@@ -38,7 +64,7 @@ import {
                 <Checkbox>Remember me</Checkbox>
                 <Link color={'blue.500'} href="\login">Already have an account? Log in</Link>
               </Stack>
-              <Button colorScheme={'blue'} variant={'solid'}>
+              <Button colorScheme={'blue'} variant={'solid'} onClick={handleSubmission}>
                 Sign Up
               </Button>
             </Stack>
