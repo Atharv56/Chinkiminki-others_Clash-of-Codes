@@ -10,13 +10,13 @@ import {
     Stack,
     Image,
   } from '@chakra-ui/react';
-
+  import Login from './img3.jpg'
   
   export default function SplitScreen() {
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
-          <Stack spacing={4} w={'full'} maxW={'md'}>
+          <Stack spacing={4} w={'full'} maxW={'md'} border={'3px solid black'} margin={'50'} padding={'50'} borderRadius={'50'}>
             <Heading fontSize={'2xl'}>Sign in to your account</Heading>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
@@ -47,7 +47,7 @@ import {
             alt={'Login Image'}
             objectFit={'cover'}
             src={
-                "..login/img3.jpg"
+                Login
             }
           />
         </Flex>
