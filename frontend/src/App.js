@@ -15,6 +15,7 @@ import Translate from './components/Translate/Translate';
 import Predict from './components/predict/predict';
 // import Articles from './components/blog/Articles';
 //import MDBFooter from './components/Footer/footer';
+import Courses from './components/Courses/courses';
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path='/form' element = {<Multistep/>} />
           <Route path='/voice' element={<Translate />} />
           <Route path='/predict' element={<Predict />} />
+          <Route path='/courses' element={<Courses />} />
         </Routes>
       </Router>
             

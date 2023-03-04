@@ -66,16 +66,16 @@ import Slider from 'react-slick';
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
               <Button
                 rounded={'full'}
-                bg={'gray.400'}
+                bg={'gray.600'}
                 color={'white'}
                 fontSize={'20'}
                 _hover={{
-                  bg: 'gray.400',
-                  
+                  bg: 'gray.500',
+                  color: 'black'
                 }}>
                 <a href="/login">Login In</a>
               </Button>
-              <Button rounded={'full'} fontSize={''}><a href="/signup">
+              <Button rounded={'full'} fontSize={'18'}><a href="/signup">
               <Text color={'gray.500'}>
                 Sign In
             </Text></a></Button>
