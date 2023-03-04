@@ -1,142 +1,166 @@
-import React from 'react'
-import styles from './contact-us.module.css'
-import NavScrollExample from '../navbar/Navbar';
-import AnimatedPage from '../Animate/Animate';
+import {
+  Container,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  IconButton,
+  Button,
+  VStack,
+  HStack,
+  Wrap,
+  WrapItem,
+  FormControl,
+  FormLabel,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Textarea,
+} from '@chakra-ui/react';
+import {
+  MdPhone,
+  MdEmail,
+  MdLocationOn,
+  MdFacebook,
+  MdOutlineEmail,
+} from 'react-icons/md';
+import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 
-export default function ContactUs() {
-  const handleSubmit = () => {
-
-  }
-  const handleInputChange = () => {
-
-  }
-
+export default function contact() {
   return (
-    <>
-
-    <NavScrollExample />
-    <div clasName={styles.fullPage}>
-    <AnimatedPage>
-    <section className = "contactus-section">
-      <div className ="container">
-        <div className ="row justify-content-center">
-          <div clasName = "col-md-10">
-            <div className = "wrapper">
-              <div className='row no-gutters'>
-                <div className = "col-md-6">
-                  <div className='contact wrap w-100 p-lg-5 p-4'>
-                    <h3 className='mb-4'>Send us a Message</h3>
-                    <form id="contactForm" className='contactForm' onSubmit={handleSubmit}>
-                      <div className='row'>
-                        <div className='col-md-12'>
-                          <div className='form-group'>
-                              <input 
-                                type="text" 
-                                className='form-control'
-                                name='name'
-                                placeholder='Name'
-                                onChange={handleInputChange}
-                              />
-                          </div>
-                        </div>
-
-                        <div className='col-md-12'>
-                          <div className='form-group'>
-                              <input 
-                                type="email" 
-                                className='form-control'
-                                name='email'
-                                placeholder='Email'
-                                onChange={handleInputChange}
-                              />
-                          </div>
-                        </div>
-
-                        <div className='col-md-12'>
-                          <div className='form-group'>
-                              <input 
-                                type="text" 
-                                className='form-control'
-                                name='subject'
-                                placeholder='Subject of the Message'
-                                onChange={handleInputChange}
-                              />
-                          </div>
-                        </div>
-
-                        <div className='col-md-12'>
-                          <div className='form-group'>
-                              <textarea 
-                                type="text" 
-                                className='form-control'
-                                name='message'
-                                placeholder='Message'
-                                onChange={handleInputChange}
-                              ></textarea>
-                          </div>
-                        </div>
-                        <div className='col-md-12'>
-                            <div className='formgroup'>
-                              <input type="submit" value="Send Message" className='btn btn-primary'/>
-                            </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div className='col-md-6 d-flex align-items-stretch'>
-                    <div className='info-wrap w-100 p-lg-5 p-4 img'>
-                      <h3>Contact Us</h3>
-                      <p className='mb-4'>
-                        Baatein ye kabhi na main bhulu na
-                      </p>
-                      <div className='dbox w-100 dflex align-items-start'>
-                        <div className='dflex align-items-center justify-content-center'>
-                          <span className='fa fa-map-marker'></span>
-                        </div>
-                        <div className='text pl-3'>
-                          <p>
-                            <span>Address:</span> Mera Ghar
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className='dbox w-100 dflex align-items-start'>
-                        <div className='dflex align-items-center justify-content-center'>
-                          <span className='fa fa-phone'></span>
-                        </div>
-                        <div className='text pl-3'>
-                          <p>
-                            <span>Phone:</span> 8291**6737😉
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className='dbox w-100 dflex align-items-start'>
-                        <div className='dflex align-items-center justify-content-center'>
-                          <span className='fa fa-paper-plane'></span>
-                        </div>
-                        <div className='text pl-3'>
-                          <p>
-                            <span>Email:</span> react-sucks@getalife.org
-                          </p>
-                        </div>
-                      </div>
-
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    </AnimatedPage>
-  </div>
-
-    </>
-    
-  
-    
-  )
+    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden" >
+      <Flex>
+        <Box
+          bg="#02054B"
+          color="white"
+          borderRadius="lg"
+          m={{ sm: 4, md: 16, lg: 10 }}
+          p={{ sm: 5, md: 5, lg: 16 }}>
+          <Box p={4} >
+            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+              <WrapItem>
+                <Box boxShadow='2xl' >
+                  <Heading>Contact</Heading>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                    Fill up the form below to contact
+                  </Text>
+                  <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
+                    <VStack pl={0} spacing={3} alignItems="flex-start">
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="200px"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: '2px solid #1C6FEB' }}
+                        leftIcon={<MdPhone color="#1970F1" size="20px" />}>
+                        +91-988888888
+                      </Button>
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="200px"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: '2px solid #1C6FEB' }}
+                        leftIcon={<MdEmail color="#1970F1" size="20px" />}>
+                        hello@abc.com
+                      </Button>
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="200px"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: '2px solid #1C6FEB' }}
+                        leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
+                        Karnavati, India
+                      </Button>
+                    </VStack>
+                  </Box>
+                  <HStack
+                    mt={{ lg: 10, md: 10 }}
+                    spacing={5}
+                    px={5}
+                    alignItems="flex-start">
+                    <IconButton
+                      aria-label="facebook"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<MdFacebook size="28px" />}
+                    />
+                    <IconButton
+                      aria-label="github"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<BsGithub size="28px" />}
+                    />
+                    <IconButton
+                      aria-label="discord"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<BsDiscord size="28px" />}
+                    />
+                  </HStack>
+                </Box>
+              </WrapItem>
+              <WrapItem>
+                <Box bg="white" borderRadius="lg">
+                  <Box m={8} color="#0B0E3F">
+                    <VStack spacing={5}>
+                      <FormControl id="name">
+                        <FormLabel>Your Name</FormLabel>
+                        <InputGroup borderColor="#E0E1E7">
+                          <InputLeftElement
+                            pointerEvents="none"
+                            children={<BsPerson color="gray.800" />}
+                          />
+                          <Input type="text" size="md" />
+                        </InputGroup>
+                      </FormControl>
+                      <FormControl id="name">
+                        <FormLabel>Mail</FormLabel>
+                        <InputGroup borderColor="#E0E1E7">
+                          <InputLeftElement
+                            pointerEvents="none"
+                            children={<MdOutlineEmail color="gray.800" />}
+                          />
+                          <Input type="text" size="md" />
+                        </InputGroup>
+                      </FormControl>
+                      <FormControl id="name">
+                        <FormLabel>Message</FormLabel>
+                        <Textarea
+                          borderColor="gray.300"
+                          _hover={{
+                            borderRadius: 'gray.300',
+                          }}
+                          placeholder="message"
+                        />
+                      </FormControl>
+                      <FormControl id="name" float="right">
+                        <Button
+                          variant="solid"
+                          bg="#0D74FF"
+                          color="white"
+                          _hover={{}}>
+                          Send Message
+                        </Button>
+                      </FormControl>
+                    </VStack>
+                  </Box>
+                </Box>
+              </WrapItem>
+            </Wrap>
+          </Box>
+        </Box>
+      </Flex>
+    </Container>
+  );
 }
