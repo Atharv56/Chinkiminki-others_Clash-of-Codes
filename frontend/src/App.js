@@ -11,6 +11,7 @@ import Multistep from './components/Form/Form';
 import * as React from 'react'
 import {ChakraProvider} from '@chakra-ui/react'
 import Translate from './components/Translate/Translate';
+import Predict from './components/predict/predict';
 //import MDBFooter from './components/Footer/footer';
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/form' element = {<Multistep/>} />
           <Route path='/voice' element={<Translate />} />
+          <Route path='/predict' element={<Predict />} />
         </Routes>
       </Router>
             
