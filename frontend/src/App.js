@@ -7,6 +7,7 @@ import Login from './components/login/login';
 import Signup from './components/sign up/signup';
 import Blog from './components/blog/blog';
 import ContactUs from './components/contact-us/contact-us';
+import Hero from './components/Hero/Hero';
 import Multistep from './components/Form/Form';
 import * as React from 'react'
 import {ChakraProvider} from '@chakra-ui/react'
@@ -24,6 +25,7 @@ function App() {
     <Router>
         <Routes>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/hero" element={<Hero/>}/>
           <Route path="/" element={<Signup/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path='/blog' element={<Blog />} />
