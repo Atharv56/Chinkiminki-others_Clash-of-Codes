@@ -13,6 +13,7 @@ import * as React from 'react'
 import {ChakraProvider} from '@chakra-ui/react'
 import Translate from './components/Translate/Translate';
 import Predict from './components/predict/predict';
+// import Articles from './components/blog/Articles';
 //import MDBFooter from './components/Footer/footer';
 
 
