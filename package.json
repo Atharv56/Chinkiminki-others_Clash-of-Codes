@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "framer-motion": "^10.0.1",
+    "mdb-ui-kit": "^6.2.0",
+    "react-toastify": "^9.1.1",
+    "usestate": "^1.1.3"
+  }
+}

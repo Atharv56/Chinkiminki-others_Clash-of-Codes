@@ -1,0 +1,15 @@
+.btn{
+    padding: 10px;
+    /* margin-left: 5px; */
+    margin-right: 5px;
+    color:black !important;
+    background-color: aliceblue !important;
+    /* float: right;
+    justify-content: right; */
+    border: 2px solid whitesmoke !important;
+}
+.btn:hover{
+    background-color: gray !important;
+    color: black !important;
+    border: 2px solid whitesmoke !important;
+}
