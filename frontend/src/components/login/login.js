@@ -11,6 +11,9 @@ import {
     Image,
   } from '@chakra-ui/react';
   import Login from './img3.jpg'
+
+  import img3 from "./img3.jpg"
+
   
   export default function SplitScreen() {
     return (
@@ -44,7 +47,7 @@ import {
         <Flex flex={1}>
           <Image
             style={{height:600,width:800}}
-            alt={'Login Image'}
+            alt='Login Image'
             objectFit={'cover'}
             src={
                 Login
