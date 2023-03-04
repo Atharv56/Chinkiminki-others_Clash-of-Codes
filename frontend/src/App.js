@@ -8,6 +8,8 @@ import Signup from './components/sign up/signup';
 import Blog from './components/blog/blog';
 import ContactUs from './components/contact-us/contact-us';
 import Multistep from './components/Form/Form';
+import * as React from 'react'
+import {ChakraProvider} from '@chakra-ui/react'
 //import MDBFooter from './components/Footer/footer';
 
 
@@ -15,6 +17,8 @@ import Multistep from './components/Form/Form';
 function App() {
   return (
     <>
+    <ChakraProvider>
+
     <Router>
         <Routes>
           <Route path="/login" element={<Login/>}/>
@@ -25,6 +29,8 @@ function App() {
           <Route path='/form' element = {<Multistep/>} />
         </Routes>
       </Router>
+            
+    </ChakraProvider>
     </>
   );
 }
