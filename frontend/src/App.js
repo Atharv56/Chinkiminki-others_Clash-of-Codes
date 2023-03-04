@@ -13,11 +13,7 @@ import * as React from 'react'
 import {ChakraProvider} from '@chakra-ui/react'
 import Translate from './components/Translate/Translate';
 import Predict from './components/predict/predict';
-<<<<<<< Updated upstream
 // import Articles from './components/blog/Articles';
-=======
-
->>>>>>> Stashed changes
 //import MDBFooter from './components/Footer/footer';
 
 
