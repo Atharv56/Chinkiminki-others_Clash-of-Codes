@@ -1,30 +1,104 @@
-import React from "react";
-import "./Hero.css";
-import Slider from "./Slider";
+import {
+    Button,
+    Flex,
+    Heading,
+    Image,
+    Stack,
+    Text,
+    useBreakpointValue,
+  } from '@chakra-ui/react';
 
+  import {
+    Box,
+    IconButton,
+    Container,
+  } from '@chakra-ui/react';
 
-const Hero = ({ imageSrc }) => {
-  return (
-    <>
-    <div className="hero">
-      <img src={imageSrc} alt="Travel" className="hero__image" />
-      <h1 className="hero__title">Travel made simple.</h1>
-    </div>
-    <Slider
-        imageSrc={""}
-        title={"Be an explorer."}
-        subtitle={
-          "Our platform offers a wide variety of unique travel locations!"
-        }
-      />
-      <Slider
-        imageSrc={""}
-        title={"Memories for a lifetime."}
-        subtitle={"Your dream vacation is only a few clicks away."}
-        flipped={true}
-      />
+  // Here we have used react-icons package for the icons
+import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+// And react-slick as our Carousel Lib
+import Slider from 'react-slick';
+
+  
+  
+  import hero from "./Hero.jpg"
+  import logo from "./TripTales_Light.png"
+
+  
+  
+
+  export default function SplitScreen() {
+    return (
+        <>
+        <div>
+            <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+        <Flex p={8} flex={1} align={'center'} justify={'center'}>
+          <Stack spacing={6} w={'full'} maxW={'lg'}>
+            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <Image          
+                    alt={'Login Image'}
+                    objectFit={'cover'}
+                    src={
+                        logo
+                    } 
+                />
+              <Text
+              as={'span'}
+              position={'relative'}
+              _after={{
+                content: "''",
+                width: 'full',
+                height: useBreakpointValue({ base: '20%', md: '30%' }),
+                position: 'absolute',
+                bottom: 1,
+                left: 0,
+                bg: 'gray.400',
+                zIndex: -1,
+              }}>
+              <b>Travel Along</b>
+            </Text>
+              <br />{' '}
+              
+            </Heading>
+            <Text fontSize={{ base: 'md', lg: 'lg'}} color={'gray.500'}>
+              Lorem ipsumklfjds jsfd jfdsa; jdsfla ljkdfsa lksfdja jkl fsdaf dskjljksad flkldsf j
+            </Text>
+            <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+              <Button
+                rounded={'full'}
+                bg={'gray.400'}
+                color={'white'}
+                fontSize={'20'}
+                _hover={{
+                  bg: 'gray.400',
+                  
+                }}>
+                <a href="/login">Login In</a>
+              </Button>
+              <Button rounded={'full'} fontSize={''}><a href="/signup">
+              <Text color={'gray.500'}>
+                Sign In
+            </Text></a></Button>
+            </Stack>
+          </Stack>
+        </Flex>
+        <Flex flex={1}>
+          <Image
+          height={'975'}
+          
+          
+            alt={'Login Image'}
+            objectFit={'cover'}
+            src={
+                hero
+            } 
+          />
+        </Flex>
+      </Stack>
+
+        </div>
+    
     </>
-  );
-};
-
-export default Hero;
+      
+    );
+  }

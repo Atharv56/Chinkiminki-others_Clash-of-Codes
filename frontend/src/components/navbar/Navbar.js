@@ -4,13 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Link}  from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import styles from './Navbar.css';
+import logo from "./TripTales_Dark.png"
 
 export default function NavScrollExample() {
   return (
     <div className='navBar'>
     <Navbar bg="black" variant="dark" expand="lg" sticky = "top" collapseOnSelect>
         <Navbar.Brand href="/home">
-          <img  src={""} alt="" class="logo"/>
+          <img  src={logo} alt="" class="logo"/>
         </Navbar.Brand>
         <Navbar.Toggle/>
         <Navbar.Collapse className='right-aligned'>
@@ -28,7 +29,7 @@ export default function NavScrollExample() {
               <NavDropdown.Divider/>
               <NavDropdown.Item href="#action/3.4" className = "links">Projects</NavDropdown.Item>
             </NavDropdown>
-              <Link to= "/login"><Button className="btn">LogOut</Button></Link>
+              <Link to= "/login"><Button className="btn">Log Out</Button></Link>
             
 
           </Nav>

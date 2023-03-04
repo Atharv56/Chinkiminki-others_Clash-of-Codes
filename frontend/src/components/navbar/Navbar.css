@@ -6,11 +6,11 @@
     margin-top: 250px;
 }
 .logo {
-    margin-left: 50px;
+    margin-left: 0;
     margin-top: 0px;
     margin-bottom: 0px;
-    height: 10px;
-    width: 50px;  
+    height: 62.5px;
+    width: 250px;  
 }
 .right-aligned{
     justify-content: flex-end;
