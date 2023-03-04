@@ -11,17 +11,10 @@ import {
     Image,
   } from '@chakra-ui/react';
   import Login from './img3.jpg'
-<<<<<<< Updated upstream
-
-  import img3 from "./img3.jpg"
-
-  
-=======
   import { useNavigate } from 'react-router-dom'
   import{signInWithEmailAndPassword} from 'firebase/auth'
   import {useRef, useState} from 'react'
   import {auth} from '../firebase'
->>>>>>> Stashed changes
   export default function SplitScreen() {
     const navigate = useNavigate()
     const emailRef = useRef()
