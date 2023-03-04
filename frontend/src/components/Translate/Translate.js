@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import countries from './data'
-import './translate.css'
+import './translate.css';
+//import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
+//import { favolumeup } from '@fontawesome/free-solid-svg-icons'
+import {FaBeer} from 'react-icons/fa'
+
 
 const Translate = () => {
   useEffect(() => {
@@ -107,24 +111,27 @@ const Translate = () => {
           <ul className="controls">
             <li className="row from">
               <div className="icons">
+                <FaBeer id="from" className="fas fa-volume-up"/>
                 <i id="from" className="fas fa-volume-up"></i>
                 <i id="from" className="fas fa-copy"></i>
               </div>
               <select></select>
             </li>
             <li className="exchange">
-              <i className="fas fa-exchange-alt"></i>
+              <i className="fas fa-exchange-alt" style={{color:'red'}}></i>
             </li>
             <li className="row to">
               <select></select>
               <div className="icons">
+                
+               {/* const element = <FontAwesomeIcon icon={favolumeup} /> */}
                 <i id="to" className="fas fa-volume-up"></i>
                 <i id="to" className="fas fa-copy"></i>
               </div>
             </li>
           </ul>
         </div>
-        <button>Translate Text</button>
+        <button style={{backgroundColor:'#0077b6'}}>Translate Text</button>
       </div>
     </>
   );

@@ -16,7 +16,7 @@ import {
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
-          <Stack spacing={4} w={'full'} maxW={'md'} border={'3px solid black'} margin={'50'} padding={'50'} borderRadius={'50'}>
+          <Stack spacing={4} w={'full'} maxW={'md'} border={'3px solid black'} margin={'50'} padding={'50'} borderRadius={'50'} >
             <Heading fontSize={'2xl'}>Sign in to your account</Heading>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
