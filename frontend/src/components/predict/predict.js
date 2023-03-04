@@ -63,7 +63,7 @@ export default function Predict() {
                 </Form>
             </Card.Body>
             <Card.Body>
-                <h2 className="text-center mb-4">Top 5 Quotes:</h2>
+                <h2 className="text-center mb-4">These are the top people with similar interests:</h2>
                 <h5 className="text-center mb-4">{predict.map((data) => {
                     
                     return <p>{data}</p>
