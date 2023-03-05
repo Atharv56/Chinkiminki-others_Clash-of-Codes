@@ -83,7 +83,7 @@ export default function Predict() {
                 <h2 className="text-center mb-4">These are the top people with similar interests:</h2>
                 <h5 className="text-center mb-4">{predict.map((data) => {
                     
-                    return <p>{data}</p>
+                    return <p>{data}<Button href="/chat" variant="primary">Would you like to connect with them</Button></p>
                 })}</h5>
             </Card.Body>
         </Card>
