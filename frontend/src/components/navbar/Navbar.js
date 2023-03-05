@@ -20,7 +20,7 @@ export default function NavScrollExample() {
 
 
 
-            <Nav.Link href='#' id='google_translate_element' className='links'></Nav.Link>
+            <Nav.Link id="google_translate_element" className="links">Translate</Nav.Link>
 
           <NavDropdown title="Travel with Us" id="nav-dropdown1">
               <NavDropdown.Item href="/predict" className = "links">Find your Travel Buddy</NavDropdown.Item>
