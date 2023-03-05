@@ -1,6 +1,6 @@
 import React from 'react';
 import {auth} from '../firebase'
-import "C:/complete web development/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
+// import "C:/complete web development/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
 
 const style = {
   message: `flex items-center shadow-xl m-4 py-2 px-3 rounded-tl-full rounded-tr-full`,

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {auth, db} from '../firebase'
 import {addDoc, collection, serverTimestamp} from 'firebase/firestore'
-import "C:/complete web development/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
+// import "C:/complete web development/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
 
 const style = {
   form: `h-14 w-full max-w-[728px]  flex text-xl absolute bottom-0`,
