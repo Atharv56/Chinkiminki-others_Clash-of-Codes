@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Link}  from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from "./TripTales_Dark.png"
+import './Navbar.css'
 
 export default function NavScrollExample() {
   return (
@@ -19,7 +20,7 @@ export default function NavScrollExample() {
 
 
 
-            <Nav.Link href='#' id='google_translate_element' className='links'>Translate</Nav.Link>
+            <Nav.Link href='#' id='google_translate_element' className='links'></Nav.Link>
 
           <NavDropdown title="Travel with Us" id="nav-dropdown1">
               <NavDropdown.Item href="/predict" className = "links">Find your Travel Buddy</NavDropdown.Item>
