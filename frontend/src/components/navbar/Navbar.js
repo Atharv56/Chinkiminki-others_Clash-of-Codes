@@ -3,8 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link}  from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Trip from '../images/img5.png'
-import styles from './Navbar.css';
 import logo from "./TripTales_Dark.png"
 
 export default function NavScrollExample() {
@@ -19,22 +17,12 @@ export default function NavScrollExample() {
         <span styles={{display:"inline",float:"right",marginTop:5,textAlign:"center",padding:50}}>
           <Nav>
 
-<<<<<<< Updated upstream
 
-            <Nav.Link href="#" className = "links">hi</Nav.Link>
-            {/* <div id='google_translate_element'></div> */}
+
             <Nav.Link href='#' id='google_translate_element' className='links'>Translate</Nav.Link>
-            <Nav.Link href="#" className = "links">Projects</Nav.Link>
-            <Nav.Link href="#" className = "links">Projects</Nav.Link>
-            {/* <img src={Trip} alt='log'></img> */}
-            <NavDropdown title="Dropdown" class = "links">
-              <NavDropdown.Item href="#action/3.1" className = "links">Projects</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className = "links">Another Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className = "links">Projects</NavDropdown.Item>
-=======
+
           <NavDropdown title="Travel with Us" id="nav-dropdown1">
               <NavDropdown.Item href="/predict" className = "links">Find your Travel Buddy</NavDropdown.Item>
->>>>>>> Stashed changes
               <NavDropdown.Divider/>
               <NavDropdown.Item href="/translate" className = "links">Connect with Locals</NavDropdown.Item>
 
