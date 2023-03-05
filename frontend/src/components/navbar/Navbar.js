@@ -19,6 +19,7 @@ export default function NavScrollExample() {
         <span styles={{display:"inline",float:"right",marginTop:5,textAlign:"center",padding:50}}>
           <Nav>
 
+<<<<<<< Updated upstream
 
             <Nav.Link href="#" className = "links">hi</Nav.Link>
             {/* <div id='google_translate_element'></div> */}
@@ -30,11 +31,29 @@ export default function NavScrollExample() {
               <NavDropdown.Item href="#action/3.1" className = "links">Projects</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" className = "links">Another Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3" className = "links">Projects</NavDropdown.Item>
+=======
+          <NavDropdown title="Travel with Us" id="nav-dropdown1">
+              <NavDropdown.Item href="/predict" className = "links">Find your Travel Buddy</NavDropdown.Item>
+>>>>>>> Stashed changes
               <NavDropdown.Divider/>
-              <NavDropdown.Item href="#action/3.4" className = "links">Projects</NavDropdown.Item>
-              <img src={Trip} styles={{color:'red'}} alt='log'></img>
+              <NavDropdown.Item href="/translate" className = "links">Connect with Locals</NavDropdown.Item>
+
             </NavDropdown>
+
+            <NavDropdown title="Explore" id="nav-dropdown2">
+              <NavDropdown.Item href="/courses" className = "links">Courses</NavDropdown.Item>
+              <NavDropdown.Divider/>
+              <NavDropdown.Item href="/events" className = "links">Events</NavDropdown.Item>
+
+            </NavDropdown>
+            
+            <Nav.Link href="/blog" className = "links">Blog</Nav.Link>
+            <Nav.Link href="/contactus" className = "links">Contact Us</Nav.Link>
+            
+            <span id="bttn">
               <Link to= "/login"><Button className="btn">Log Out</Button></Link>
+            </span>
+            
             
 
           </Nav>

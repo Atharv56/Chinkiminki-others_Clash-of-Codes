@@ -17,18 +17,36 @@
     padding-left: 50px;
 }
 .links{
-    padding: 0px;
+    padding: 10px;
     font-size: 20px;
-    padding-top: 5px;
+    padding-top: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#nav-dropdown1{
+    padding: 10px;
+    font-size: 20px;
+    padding-top: 9px;
+}
+#nav-dropdown2{
+    padding: 10px;
+    font-size: 20px;
+    padding-top: 9px;
 }
 
-
 .btn{
-    margin-right: 0px;
-    margin: 0px;
+    margin-right: 10px;
+    margin: 0;
     color:rgb(0, 0, 0) !important;
     background-color: aliceblue !important;
     border: 2px solid whitesmoke !important;
+}
+
+#bttn{
+    margin-right: 25px;
+    margin-left: 25px;
 }
 .btn:hover{
     background-color: rgb(0, 0, 0) !important;
@@ -36,5 +54,5 @@
     border: 2px solid whitesmoke !important;
 }
 .Nav{
-    padding-left: 50px;
+    padding-left: 10px;
 }
