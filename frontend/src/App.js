@@ -36,11 +36,8 @@ function App() {
           <Route path='/form' element = {<Multistep/>} />
           <Route path='/voice' element={<Translate />} />
           <Route path='/predict' element={<Predict />} />
-<<<<<<< Updated upstream
           <Route path='/courses' element={<Courses />} />
-=======
           <Route path='/chat' element={<Chat />} />
->>>>>>> Stashed changes
         </Routes>
       </Router>
             

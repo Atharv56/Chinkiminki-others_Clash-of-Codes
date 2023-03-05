@@ -3,7 +3,7 @@ import Message from './Message';
 import SendMessage from './SendMessage';
 import { db } from '../firebase';
 import { query, collection, orderBy, onSnapshot } from 'firebase/firestore';
-import "/Users/atharv/Documents/Code/Hackathon/COC- Hackathon/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
+import "C:/complete web development/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
 
 const style = {
   appContainer: `max-w-[728px] mx-auto text-center`,

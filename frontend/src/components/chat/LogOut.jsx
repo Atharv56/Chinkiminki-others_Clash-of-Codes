@@ -1,6 +1,6 @@
 import React from 'react'
 import {auth} from '../firebase'
-import "/Users/atharv/Documents/Code/Hackathon/COC- Hackathon/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
+import "C:/complete web development/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
 
 const style = {
     button: `bg-gray-200 px-4 py-2 hover:bg-gray-100`

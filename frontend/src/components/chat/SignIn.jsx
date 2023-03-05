@@ -1,6 +1,6 @@
 import React from 'react'
 import GoogleButton from 'react-google-button'
-import "/Users/atharv/Documents/Code/Hackathon/COC- Hackathon/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
+import "C:/complete web development/Chinkiminki-others_Clash-of-Codes/frontend/src/App.css"
 
 import {auth} from '../firebase'
 import {GoogleAuthProvider, signInWithRedirect} from 'firebase/auth'
