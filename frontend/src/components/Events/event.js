@@ -10,7 +10,7 @@ const Event = () => {
         <>
         <NavScrollExample />
         <AnimatedPage>
-                <div className="container">
+                <div className="container" style={{"marginTop": 100}}>
                     <div className="row">
                         <div className="col-md-8">
                             <EventContainer/>
