@@ -21,7 +21,7 @@ import Slider from 'react-slick';
 
   
   
-  import hero from "./Hero.jpg"
+  import hero from "./hero1.jpg"
   import logo from "./TripTales_Light.png"
 
   
@@ -35,7 +35,8 @@ import Slider from 'react-slick';
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
           <Stack spacing={6} w={'full'} maxW={'lg'}>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                <Image          
+                <Image 
+                           
                     alt={'Login Image'}
                     objectFit={'cover'}
                     src={
@@ -84,7 +85,8 @@ import Slider from 'react-slick';
         </Flex>
         <Flex flex={1}>
           <Image
-          height={'975'}
+          height={'675'}
+        
           
           
             alt={'Login Image'}
