@@ -17,15 +17,10 @@ export default function NavScrollExample() {
         <Navbar.Collapse className='right-aligned'>
         <span styles={{display:"inline",float:"right",marginTop:5,textAlign:"center",padding:50}}>
           <Nav>
-
-
-
-            <Nav.Link id="google_translate_element" className="links">Translate</Nav.Link>
-
           <NavDropdown title="Travel with Us" id="nav-dropdown1">
               <NavDropdown.Item href="/predict" className = "links">Find your Travel Buddy</NavDropdown.Item>
               <NavDropdown.Divider/>
-              <NavDropdown.Item href="/translate" className = "links">Connect with Locals</NavDropdown.Item>
+              <NavDropdown.Item href="/voice" className = "links">Connect with Locals</NavDropdown.Item>
 
             </NavDropdown>
 

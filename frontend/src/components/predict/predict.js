@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Card, Form, Button, Container, FormCheck} from 'react-bootstrap'
 import PredictImg from '../images/map1.jpg'
+import NavScrollExample from "../navbar/Navbar";
 
 var sectionStyle = {
     backgroundImage: `url(${PredictImg})`
@@ -54,8 +55,9 @@ export default function Predict() {
     }
     return(
         <>
+        <NavScrollExample />
         {/* <img src={PredictImg} style={{width:1600,}} alt="prediction"></img> */}
-        <body className="bg-dark" style={sectionStyle}>
+        <body className="bg-dark" style={sectionStyle} style={{"marginTop": 100}}>
         <Container className="d-flex align-items-center justify-content-center" style={{minHeight: '100vh'}} style={sectionStyle}>
         <div className='w-100' style={{maxWidth: '400px'}}>
         <Card className="bg-light">

@@ -59,7 +59,7 @@ import {
         </Flex>
         <Flex flex={1}>
           <Image
-            style={{height:600,width:800}}
+            style={{height:850,width:850}}
             alt='Login Image'
             objectFit={'cover'}
             src={

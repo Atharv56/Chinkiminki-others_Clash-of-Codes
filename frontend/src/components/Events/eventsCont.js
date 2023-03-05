@@ -69,15 +69,15 @@ const EventContainer = () => {
 
                       )}
                       {/* <FaHeart onClick={handleClickLikeButton}/> */}
-                      <button style={{}}variant="primary" onClick={handleClickLikeButton}>RSVP</button>
-                      <div>{buttonLikes} number of participants</div>
+                      
                     </div>
                   </div>
                   <h3 style={{padding:5,color:"blue",fontWeight: "bold"}}>{title}</h3>
 
                   <p style={{padding:5}}>{createdAt.toDate().toDateString()}</p>
                   <h5 style={{padding:5,fontSize:15}}>{description}</h5>
-                  
+                  <button style={{}}variant="primary" onClick={handleClickLikeButton}>RSVP</button>
+                      <div>{buttonLikes} number of participants</div>
                   <div className="d-flex flex-row-reverse">
                   <div className="d-flex flex-row-reverse">
               {/* {user && <LikeArticle id={id} likes={articles.likes} />}

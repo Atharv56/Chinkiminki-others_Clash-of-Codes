@@ -136,7 +136,7 @@ const Translate = () => {
             </li>
           </ul>
         </div>
-        <button style={{backgroundColor:'#0077b6'}}>Translate Text</button>
+        <button style={{backgroundColor:'#0077b6'}} >Translate Text</button>
       </div>
     </>
   );

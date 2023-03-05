@@ -35,8 +35,7 @@ import Slider from 'react-slick';
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
           <Stack spacing={6} w={'full'} maxW={'lg'}>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-                <Image 
-                           
+                <Image   
                     alt={'Login Image'}
                     objectFit={'cover'}
                     src={
@@ -85,7 +84,7 @@ import Slider from 'react-slick';
         </Flex>
         <Flex flex={1}>
           <Image
-          height={'675'}
+          height={'850'}
         
           
           

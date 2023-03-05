@@ -35,7 +35,7 @@ function App() {
           <Route path='/blog' element={<Blog />} />
           <Route path='/contactus' element={<ContactUs />} />
           {/* <Route path='/form' element = {<Multistep/>} /> */}
-          <Route path='/traslate' element={<Translate />} />
+          <Route path='/voice' element={<Translate />} />
           <Route path='/predict' element={<Predict />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/chat' element={<Chat />} />
