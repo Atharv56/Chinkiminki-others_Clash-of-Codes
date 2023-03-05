@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import {Card, Form, Button, Container, FormCheck} from 'react-bootstrap'
+import PredictImg from '../images/map1.jpg'
+
+var sectionStyle = {
+    backgroundImage: `url(${PredictImg})`
+ }
+ 
+
 export default function Predict() {
     const [values, setValues] = useState(
         {quote : '',}
@@ -47,12 +54,13 @@ export default function Predict() {
     }
     return(
         <>
-        <body className="bg-dark">
-        <Container className="d-flex align-items-center justify-content-center" style={{minHeight: '100vh'}}>
+        {/* <img src={PredictImg} style={{width:1600,}} alt="prediction"></img> */}
+        <body className="bg-dark" style={sectionStyle}>
+        <Container className="d-flex align-items-center justify-content-center" style={{minHeight: '100vh'}} style={sectionStyle}>
         <div className='w-100' style={{maxWidth: '400px'}}>
         <Card className="bg-light">
             <Card.Body>
-                <h2 className='text-center mb-4' style={{color:'white',backgroundColor:'black',padding:5}}>Prediction</h2>
+                <h2 className='text-center mb-4' style={{color:'white',backgroundColor:'blue',padding:5}}>Prediction</h2>
                 <Form>
                    <Form.Check id = 'text'>
                         <Form.Label><b>Age</b></Form.Label>

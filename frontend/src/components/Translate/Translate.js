@@ -3,7 +3,9 @@ import countries from './data'
 import './translate.css';
 //import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
 //import { favolumeup } from '@fontawesome/free-solid-svg-icons'
-import {FaBeer} from 'react-icons/fa'
+import {BsFillVolumeUpFill} from 'react-icons/bs'
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 
 const Translate = () => {
@@ -109,13 +111,16 @@ const Translate = () => {
             ></textarea>
           </div>
           <ul className="controls">
-            <li className="row from">
-              <div className="icons">
-                <FaBeer id="from" className="fas fa-volume-up"/>
-                <i id="from" className="fas fa-volume-up"></i>
-                <i id="from" className="fas fa-copy"></i>
-              </div>
-              <select></select>
+            <li>
+            <select></select>
+            </li>
+            <li className=" ">
+              
+                <Button >
+               <BsFillVolumeUpFill className="volume-icon"/>
+                </Button>
+            
+              
             </li>
             <li className="exchange">
               <i className="fas fa-exchange-alt" style={{color:'red'}}></i>

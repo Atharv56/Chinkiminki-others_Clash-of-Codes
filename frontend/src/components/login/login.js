@@ -49,7 +49,7 @@ import {
                 justify={'space-between'}>
                 <Checkbox>Remember me</Checkbox>
                 <Link color={'blue.500'}>Forgot password?</Link>
-                <Link color={'blue.500'} href="/">Sign up</Link>
+                <Link color={'blue.500'} href="/signup">Sign up</Link>
               </Stack>
               <Button colorScheme={'blue'} variant={'solid'} onClick={handleSubmission}>
                 Sign in
