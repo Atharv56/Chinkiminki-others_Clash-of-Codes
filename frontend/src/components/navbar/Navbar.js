@@ -21,6 +21,8 @@ export default function NavScrollExample() {
 
 
             <Nav.Link href="#" className = "links">hi</Nav.Link>
+            {/* <div id='google_translate_element'></div> */}
+            <Nav.Link href='#' id='google_translate_element' className='links'>Translate</Nav.Link>
             <Nav.Link href="#" className = "links">Projects</Nav.Link>
             <Nav.Link href="#" className = "links">Projects</Nav.Link>
             {/* <img src={Trip} alt='log'></img> */}
