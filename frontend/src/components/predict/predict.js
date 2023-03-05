@@ -70,9 +70,9 @@ export default function Predict() {
                         <Form.Check aria-label="option 1" label="Female"/>
                         
                         {/* <Form.Control type = 'text' onChange={e => setValues((prev)=>({...prev, quote: e.target.value}))} required></Form.Control> */}
-                        <Form.Label ><b>Enter the location</b></Form.Label>
+                        <Form.Label ><b>Interests</b></Form.Label>
                         <Form.Control type = 'text' onChange={e => setValues((prev)=>({...prev, quote: e.target.value}))} required></Form.Control>
-                        <Form.Label><b>Interests</b></Form.Label>
+                        <Form.Label><b>Enter the location</b></Form.Label>
                         <Form.Control type = 'text' onChange={e => setValues((prev)=>({...prev, quote: e.target.value}))}required ></Form.Control>
                     </Form.Check> 
                    
