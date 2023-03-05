@@ -126,7 +126,7 @@ const Translate = () => {
                 
                {/* const element = <FontAwesomeIcon icon={favolumeup} /> */}
                 <i id="to" className="fas fa-volume-up"></i>
-                <i id="to" className="fas fa-copy"></i>
+                <i id="to" className="fas fa-copy"></i> 
               </div>
             </li>
           </ul>

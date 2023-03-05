@@ -3,14 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link}  from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Trip from '../images/img5.png'
 import styles from './Navbar.css';
+import logo from "./TripTales_Dark.png"
 
 export default function NavScrollExample() {
   return (
     <div className='navBar'>
-    <Navbar bg="black" variant="dark" expand="lg" sticky = "top" collapseOnSelect>
+    <Navbar bg="black" variant="dark" expand="lg" fixed = 'top' collapseOnSelect>
         <Navbar.Brand href="/home">
-          <img  src={""} alt="" class="logo"/>
+          <img  src={logo} alt="" class="logo"/>
         </Navbar.Brand>
         <Navbar.Toggle/>
         <Navbar.Collapse className='right-aligned'>
@@ -21,14 +23,16 @@ export default function NavScrollExample() {
             <Nav.Link href="#" className = "links">hi</Nav.Link>
             <Nav.Link href="#" className = "links">Projects</Nav.Link>
             <Nav.Link href="#" className = "links">Projects</Nav.Link>
+            {/* <img src={Trip} alt='log'></img> */}
             <NavDropdown title="Dropdown" class = "links">
               <NavDropdown.Item href="#action/3.1" className = "links">Projects</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" className = "links">Another Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3" className = "links">Projects</NavDropdown.Item>
               <NavDropdown.Divider/>
               <NavDropdown.Item href="#action/3.4" className = "links">Projects</NavDropdown.Item>
+              <img src={Trip} styles={{color:'red'}} alt='log'></img>
             </NavDropdown>
-              <Link to= "/login"><Button className="btn">LogOut</Button></Link>
+              <Link to= "/login"><Button className="btn">Log Out</Button></Link>
             
 
           </Nav>

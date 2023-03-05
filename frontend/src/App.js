@@ -13,8 +13,11 @@ import * as React from 'react'
 import {ChakraProvider} from '@chakra-ui/react'
 import Translate from './components/Translate/Translate';
 import Predict from './components/predict/predict';
+import Chat from './components/chat/Chat';
 // import Articles from './components/blog/Articles';
 //import MDBFooter from './components/Footer/footer';
+import Courses from './components/Courses/courses';
+import Event from './components/Events/event';
 
 
 
@@ -34,6 +37,9 @@ function App() {
           <Route path='/form' element = {<Multistep/>} />
           <Route path='/voice' element={<Translate />} />
           <Route path='/predict' element={<Predict />} />
+          <Route path='/courses' element={<Courses />} />
+          <Route path='/chat' element={<Chat />} />
+          <Route path='/event' element={<Event />} />
         </Routes>
       </Router>
             

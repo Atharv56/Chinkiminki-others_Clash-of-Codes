@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Card, Form, Button, Container} from 'react-bootstrap'
+import {Card, Form, Button, Container, FormCheck} from 'react-bootstrap'
 export default function Predict() {
     const [values, setValues] = useState(
         {quote : '',}
@@ -52,14 +52,23 @@ export default function Predict() {
         <div className='w-100' style={{maxWidth: '400px'}}>
         <Card className="bg-light">
             <Card.Body>
-                <h2 className='text-center mb-4'>Prediction</h2>
+                <h2 className='text-center mb-4' style={{color:'white',backgroundColor:'black',padding:5}}>Prediction</h2>
                 <Form>
-                   <Form.Group id = 'text'>
-                        <Form.Label>Enter the location</Form.Label>
+                   <Form.Check id = 'text'>
+                        <Form.Label><b>Age</b></Form.Label>
+                        <Form.Control type = 'text' onChange={e => setValues((prev)=>({...prev, quote: e.target.value}))}required></Form.Control>
+                        <Form.Label><b>Sex</b></Form.Label>
+                        <Form.Check aria-label="option 1" label="Male"/>
+                        <Form.Check aria-label="option 1" label="Female"/>
+                        
+                        {/* <Form.Control type = 'text' onChange={e => setValues((prev)=>({...prev, quote: e.target.value}))} required></Form.Control> */}
+                        <Form.Label ><b>Enter the location</b></Form.Label>
                         <Form.Control type = 'text' onChange={e => setValues((prev)=>({...prev, quote: e.target.value}))} required></Form.Control>
-                    </Form.Group> 
+                        <Form.Label><b>Interests</b></Form.Label>
+                        <Form.Control type = 'text' onChange={e => setValues((prev)=>({...prev, quote: e.target.value}))}required ></Form.Control>
+                    </Form.Check> 
                    
-                    <Button onClick={handleSubmit} type="button" className='w-100 mt-4 bg-success'>Predict</Button>
+                    <Button onClick={handleSubmit} type="button" className='w-100 mt-4 bg-success' style={{backgroundColor:'red'}}>Predict</Button>
                 </Form>
             </Card.Body>
             <Card.Body>
