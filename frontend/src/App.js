@@ -17,6 +17,7 @@ import Chat from './components/chat/Chat';
 // import Articles from './components/blog/Articles';
 //import MDBFooter from './components/Footer/footer';
 import Courses from './components/Courses/courses';
+import Event from './components/Events/event';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/predict' element={<Predict />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/chat' element={<Chat />} />
+          <Route path='/event' element={<Event />} />
         </Routes>
       </Router>
             
